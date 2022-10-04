@@ -21,6 +21,7 @@ const Hero = () => {
           </h1>
           <h3 className="text-xl mt-1 opacity-90 font-normal">
             <p>
+              {/* this typewriter is a third party library that will type and untype texts */}
               <Typewriter
                 options={{
                   strings: [
@@ -37,7 +38,6 @@ const Hero = () => {
           <div className="w-24 h-1 bg-primary bg-opacity-70 mt-6 mb-4">
             <div className="w-10 h-1 bg-primary"></div>
           </div>
-
           <p className="mb-6 mt-2 xl:w-[80%] leading-relaxed text-textSecondary font-medium dark:text-textDarkSecondary opacity-70 text-xs md:text-sm">
             Nice to meet you! I am a Full Stack Web Developer located in
             Morelos, Mexico. I have been working as a Developer for the last 4

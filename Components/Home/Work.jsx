@@ -123,13 +123,13 @@ const Work = () => {
       }
     }, 400);
   };
-
+  // changing the name to Projects section
   return (
     <Section
       id="work"
-      title="Works"
-      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam temporibus velit dignissimos."
-      subtitle="My Projects since last 5 years"
+      title="- Projects -"
+      description="Here you will find information and a demo of my personal projects that I've been working in the last 3 years"
+      subtitle="All my personal projects from the last 3 years"
       className="!pb-14 md:!pb-28"
     >
       <div className="flex items-center m-auto flex-col text-center w-full mb-10">

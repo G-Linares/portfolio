@@ -25,14 +25,14 @@ const Header = (props) => {
       icon: <HiOutlineUser className="w-5 h-5" />
     },
     {
-      name: "Works",
-      url: "#work",
-      icon: <HiOutlineCode className="w-5 h-5" />
+      name: "Experience",
+      url: "#services",
+      icon: <HiOutlineLightningBolt className="w-5 h-5" />
     },
     {
-      name: "Blog",
-      url: "#blog",
-      icon: <HiOutlineDocumentText className="w-5 h-5" />
+      name: "Projects",
+      url: "#work",
+      icon: <HiOutlineCode className="w-5 h-5" />
     },
     {
       name: "Contact",

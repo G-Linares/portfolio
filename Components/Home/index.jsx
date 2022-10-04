@@ -1,8 +1,10 @@
 import React from "react";
 import About from "./About";
 
+//here are my componenets
 import Hero from "./Hero";
 import Services from "./Services";
+import Technologies from "./Technologies";
 import Work from "./Work";
 
 const Home = () => {
@@ -14,7 +16,7 @@ const Home = () => {
   };
   return (
     <div
-      className="bg-red-500"
+      className='bg-[url("/images/background.jpg")]'
       style={{
         ...HomeStyling
       }}
@@ -23,6 +25,7 @@ const Home = () => {
       <About />
       <Services />
       <Work />
+      <Technologies />
     </div>
   );
 };
