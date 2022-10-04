@@ -28,7 +28,7 @@ const Hero = () => {
           <h3 className="text-xl mt-1 opacity-90 font-normal">
             <p>
               {/* this typewriter is a third party library that will type and untype texts */}
-              <Typewriter
+              {/* <Typewriter
                 options={{
                   strings: [
                     "I'm a Front-End Developer",
@@ -38,7 +38,8 @@ const Hero = () => {
                   autoStart: true,
                   loop: true
                 }}
-              />
+              /> */}
+              I am a Full-Stack Developer
             </p>
           </h3>
           <div className="w-24 h-1 bg-primary bg-opacity-70 mt-6 mb-4">
