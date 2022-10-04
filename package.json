@@ -23,6 +23,7 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.24.0",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1"
   }
