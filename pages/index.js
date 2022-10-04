@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import { Home as HomeComponent } from "../components";
+import { Home as HomeComponent } from "../Components";
 
 const Home = () => {
   return (
