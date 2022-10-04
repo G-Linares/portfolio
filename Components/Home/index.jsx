@@ -3,6 +3,7 @@ import About from "./About";
 
 import Hero from "./Hero";
 import Services from "./Services";
+import Work from "./Work";
 
 const Home = () => {
   const HomeStyling = {
@@ -21,6 +22,7 @@ const Home = () => {
       <Hero />
       <About />
       <Services />
+      <Work />
     </div>
   );
 };

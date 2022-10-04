@@ -5,6 +5,7 @@ import update from "../../Assets/update.jpg";
 import Image from "next/image";
 import { HiDownload, HiEye } from "react-icons/hi";
 import Link from "next/link";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   //I found the Section custom component online, this was to wrap the whole componenet and only add the content to it, it can be reused
@@ -16,10 +17,22 @@ const Hero = () => {
       <div className="flex flex-row justify-between items-center flex-wrap-reverse p-2">
         <div className="flex-grow text-center lg:text-start  w-1/2">
           <h1 className="title-font sm:text-4xl text-2xl mb-2 font-bold ">
-            Hi 👋, I Am Gerardo
+            Hi 👋, my name is Gerardo
           </h1>
-          <h3 className="text-lg mt-1 opacity-90 font-normal capitalize ">
-            Full Stack Web Developer @ Altimetrik
+          <h3 className="text-xl mt-1 opacity-90 font-normal">
+            <p>
+              <Typewriter
+                options={{
+                  strings: [
+                    "I'm a Front-End Developer",
+                    "I'm a Back-End Developer",
+                    "I'm a Full-Stack Developer"
+                  ],
+                  autoStart: true,
+                  loop: true
+                }}
+              />
+            </p>
           </h3>
           <div className="w-24 h-1 bg-primary bg-opacity-70 mt-6 mb-4">
             <div className="w-10 h-1 bg-primary"></div>
