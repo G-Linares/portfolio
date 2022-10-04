@@ -1,6 +1,8 @@
 import React from "react";
+import About from "./About";
 
 import Hero from "./Hero";
+import Services from "./Services";
 
 const Home = () => {
   const HomeStyling = {
@@ -17,6 +19,8 @@ const Home = () => {
       }}
     >
       <Hero />
+      <About />
+      <Services />
     </div>
   );
 };
