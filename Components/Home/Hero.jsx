@@ -1,6 +1,8 @@
 import React from "react";
 import Section from "../Customs/Section";
-import update from "../../Assets/update.jpg";
+// import update from "../../Assets/update.jpg";
+import montana from "../../Assets/montana.jpg";
+import { motion } from "framer-motion";
 
 import Image from "next/image";
 import { HiDownload, HiEye } from "react-icons/hi";
@@ -15,7 +17,11 @@ const Hero = () => {
       className="relative !h-full !py-10 md:!py-20 overflow-x-clip"
     >
       <div className="flex flex-row justify-between items-center flex-wrap-reverse p-2">
-        <div className="flex-grow text-center lg:text-start  w-1/2">
+        <motion.div
+          initial={{ x: -200 }}
+          whileInView={{ x: 0 }}
+          className="flex-grow text-center lg:text-start  w-1/2"
+        >
           <h1 className="title-font sm:text-4xl text-2xl mb-2 font-bold ">
             Hi 👋, my name is Gerardo
           </h1>
@@ -73,16 +79,20 @@ const Hero = () => {
               </button>
             </div>
           </div>
-        </div>
-        <div className="mb-6 mx-auto text-center select-none relative">
+        </motion.div>
+        <motion.div
+          initial={{ x: 200 }}
+          whileInView={{ x: 0 }}
+          className="mb-6 mx-auto text-center select-none relative"
+        >
           <Image
             className="object-cover object-center rounded-xl rounded-tl-[200px] z-10 "
             alt="not found"
             width={550}
             height={400}
-            src={update}
+            src={montana}
           />
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

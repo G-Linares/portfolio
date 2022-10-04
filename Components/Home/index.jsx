@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./About";
+import Contact from "./Contact";
 
 //here are my componenets
 import Hero from "./Hero";
@@ -26,6 +27,7 @@ const Home = () => {
       <Services />
       <Work />
       <Technologies />
+      <Contact />
     </div>
   );
 };

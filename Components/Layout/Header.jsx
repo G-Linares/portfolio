@@ -6,7 +6,6 @@ import {
   HiOutlineUser,
   HiOutlineCode,
   HiChevronUp,
-  HiOutlineDocumentText,
   HiOutlineSun,
   HiOutlineMoon,
   HiOutlineLightningBolt,
@@ -93,6 +92,13 @@ const Header = (props) => {
       >
         <div className="max-w-[1140px] mx-auto dark:text-textDarkPrimary text-textPrimary">
           <div className="mx-auto flex flex-wrap p-2.5 items-center flex-col xs:flex-row">
+            {/* <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <h1> hola a todos</h1>
+            </motion.div> */}
             <div
               onClick={() => handleScroll("#top")}
               className="flex title-font font-medium items-center justify-items-center text-textPrimary dark:text-textDarkPrimary cursor-pointer"

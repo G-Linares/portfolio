@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 //this uses the Section created for the Hero
 import Section from "../Customs/Section";
 //third party icons
@@ -27,7 +28,11 @@ const About = () => {
   return (
     <Section id="about" className="!relative">
       <div className="flex sm:flex-row justify-center flex-col px-4">
-        <div className="w-full sm:w-1/2 mb-12 sm:mb-0">
+        <motion.div
+          initial={{ x: -200 }}
+          whileInView={{ x: 0 }}
+          className="w-full sm:w-1/2 mb-12 sm:mb-0"
+        >
           <h1 className=" capitalize title-font  sm:text-1xl text-xl mb-2 font-bold">
             <span className="text-primary">Any fool can write code </span>
             that a computer can understand.
@@ -39,8 +44,12 @@ const About = () => {
           <p className=" capitalize leading-relaxed text-xs md:text-sm text-textSecondary dark:text-textDarkSecondary">
             - Martin Fowler
           </p>
-        </div>
-        <div className="w-full sm:w-1/2">
+        </motion.div>
+        <motion.div
+          initial={{ x: 200 }}
+          whileInView={{ x: 0 }}
+          className="w-full sm:w-1/2"
+        >
           <h1 className="capitalize title-font sm:text-2xl text-xl mb-2 font-semibold">
             Connect With Me
           </h1>
@@ -57,7 +66,7 @@ const About = () => {
               </Link>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

@@ -28,6 +28,7 @@ html.dark ::-webkit-scrollbar-thumb {
   border: 3px solid var(--dark-body-bg);
 }
 body {
+  overflow-x: hidden;
   background: rgb(255, 255, 255);
   scroll-behavior: smooth;
 }
