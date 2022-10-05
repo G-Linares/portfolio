@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { FaRegHandSpock } from "react-icons/fa";
+import { CgTerminal } from "react-icons/cg";
 
 const Footer = () => {
   const data = {
@@ -60,7 +60,7 @@ const Footer = () => {
       <div className="container max-w-[1140px] px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-64 mb-10 md:mb-0 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
           <a className="flex items-center md:justify-start justify-center dark:text-white text-gray-800">
-            <FaRegHandSpock alt="spock hola a todos" width={36} height={36} />
+            <CgTerminal alt="icon logo" width={36} height={36} />
             <span className="ml-3 text-2xl font-semibold">G. Linares</span>
           </a>
           <p className="mt-2 text-md text-textSecondary opacity-80">

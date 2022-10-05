@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import Section from "../Customs/Section";
 import ServiceCard from "../Customs/ServiceCard";
@@ -13,26 +14,22 @@ const Services = () => {
   const data = [
     {
       title: "Dish",
-      description:
-        "QA Engineer. I focused on finding bugs, issues or oportunity areas before releasing the product.",
+      description: "QA Engineer",
       icon: dish
     },
     {
       title: "Keywords Studios",
-      description:
-        "Player Support Agent. Researched the latest bugs and provided data to developers to help them fix them.",
+      description: "Player Support Agent",
       icon: keywords
     },
     {
       title: "Cura Deuda",
-      description:
-        "Full Stack Developer. Worked on the main landing page as well as a private tracking sytem for potential clients.",
+      description: "Full Stack Developer",
       icon: cura
     },
     {
       title: "Citi (Altimetrik)",
-      description:
-        "Full Stack Developer. Developed landing page for Citi's lending system Bridge, as well as the backend for it. ",
+      description: "Full Stack Developer",
       icon: citi
     }
   ];
@@ -44,7 +41,12 @@ const Services = () => {
       description="Throughout my career as a developer I have worked or colaborated with the following companies."
       subtitle="My Previous Employment History"
     >
-      <div className="flex flex-wrap justify-center items-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.7 }}
+        className="flex flex-wrap justify-center items-center"
+      >
         {data.map(({ title, description, icon }, index) => (
           <ServiceCard
             key={index}
@@ -53,7 +55,7 @@ const Services = () => {
             description={description}
           />
         ))}
-      </div>
+      </motion.div>
     </Section>
   );
 };

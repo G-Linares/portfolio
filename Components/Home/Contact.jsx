@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "../Customs/Section";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const initialState = { email: "", name: "", message: "" };
@@ -30,7 +31,12 @@ const Contact = () => {
       subtitle="Want to work together?"
       description="If you would like to discuss some work related issue please feel free to send me an email, I usually take 24hrs to respond"
     >
-      <div className=" mx-auto flex lg:flex-nowrap flex-wrap">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.7 }}
+        className=" mx-auto flex lg:flex-nowrap flex-wrap"
+      >
         <div className="lg:w-2/3 w-full shadow-normal flex-1 mx-auto rounded-lg lg:mr-10 overflow-hidden p-4 pt-56 flex items-end justify-start relative">
           <div className="mx-auto">
             <iframe
@@ -127,7 +133,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </Section>
   );
 };

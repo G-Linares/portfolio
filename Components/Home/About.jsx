@@ -29,11 +29,12 @@ const About = () => {
     <Section id="about" className="!relative">
       <div className="flex sm:flex-row justify-center flex-col px-4">
         <motion.div
-          initial={{ x: -200 }}
-          whileInView={{ x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
           className="w-full sm:w-1/2 mb-12 sm:mb-0"
         >
-          <h1 className=" capitalize title-font  sm:text-1xl text-xl mb-2 font-bold">
+          <h1 className="title-font  sm:text-1xl text-xl mb-2 font-bold">
             <span className="text-primary">Any fool can write code </span>
             that a computer can understand.
             <br /> Good programmers write code
@@ -46,8 +47,9 @@ const About = () => {
           </p>
         </motion.div>
         <motion.div
-          initial={{ x: 200 }}
-          whileInView={{ x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
           className="w-full sm:w-1/2"
         >
           <h1 className="capitalize title-font sm:text-2xl text-xl mb-2 font-semibold">

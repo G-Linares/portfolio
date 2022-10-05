@@ -21,7 +21,7 @@ const Section = (props) => {
       {(subtitle || title || description) && (
         <div className="flex flex-col text-center lg:max-w-[500px] m-auto mb-4 xs:mb-10 px-1">
           {subtitle && (
-            <span className="text-sm capitalize font-bold text-primary mb-1 xs:mb-3">
+            <span className="text-sm font-bold text-primary mb-1 xs:mb-3">
               {subtitle}
             </span>
           )}
@@ -35,7 +35,7 @@ const Section = (props) => {
             </h3>
           )}
           {description && (
-            <p className="text-sm capitalize text-textSecondary dark:text-textDarkSecondary/60">
+            <p className="text-sm text-textSecondary dark:text-textDarkSecondary/60">
               {description}
             </p>
           )}

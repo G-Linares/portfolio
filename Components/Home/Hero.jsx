@@ -18,8 +18,9 @@ const Hero = () => {
     >
       <div className="flex flex-row justify-between items-center flex-wrap-reverse p-2">
         <motion.div
-          initial={{ x: -200 }}
-          whileInView={{ x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
           className="flex-grow text-center lg:text-start  w-1/2"
         >
           <h1 className="title-font sm:text-4xl text-2xl mb-2 font-bold ">
@@ -45,7 +46,7 @@ const Hero = () => {
           <div className="w-24 h-1 bg-primary bg-opacity-70 mt-6 mb-4">
             <div className="w-10 h-1 bg-primary"></div>
           </div>
-          <p className="mb-6 mt-2 xl:w-[80%] leading-relaxed text-textSecondary font-medium dark:text-textDarkSecondary opacity-70 text-xs md:text-sm">
+          <p className="mb-6 mt-2 xl:w-[80%] leading-relaxed text-textPrimary font-medium dark:text-textDarkSecondary opacity-70 text-xs md:text-sm">
             Nice to meet you! I am a Full Stack Web Developer located in
             Morelos, Mexico. I have been working as a Developer for the last 4
             years, even though I started my programming Journey In 2016. I am
@@ -82,8 +83,8 @@ const Hero = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ x: 200 }}
-          whileInView={{ x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           className="mb-6 mx-auto text-center select-none relative"
         >
           <Image

@@ -11,7 +11,7 @@ import {
   HiOutlineLightningBolt,
   HiOutlineMail
 } from "react-icons/hi";
-import { FaRegHandSpock } from "react-icons/fa";
+import { CgTerminal } from "react-icons/cg";
 
 const Header = (props) => {
   const { theme, themeToggle } = props;
@@ -103,7 +103,7 @@ const Header = (props) => {
               onClick={() => handleScroll("#top")}
               className="flex title-font font-medium items-center justify-items-center text-textPrimary dark:text-textDarkPrimary cursor-pointer"
             >
-              <FaRegHandSpock alt="spock hola a todos" width={36} height={36} />
+              <CgTerminal alt="header icon logo" width={36} height={36} />
               <span className="ml-2 text-lg md:text-xl">G. Linares</span>
             </div>
             <nav className="mt-3 xs:mt-0 xs:!ml-auto flex flex-wrap items-center text-base justify-center">

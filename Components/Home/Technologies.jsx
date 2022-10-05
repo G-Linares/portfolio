@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FaCss3Alt,
   FaGit,
@@ -136,7 +137,12 @@ const Technologies = () => {
           Here are the technologies that I can comfortably say I can work with.
         </p>
       </div>
-      <div className="mx-auto flex md:flex-row-reverse flex-col-reverse justify-center items-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.4 }}
+        className="mx-auto flex md:flex-row-reverse flex-col-reverse justify-center items-center"
+      >
         <div className="flex justify-center items-center flex-wrap max-w-[420px] m-auto">
           {data.map(({ icon }, index) => (
             <div
@@ -147,7 +153,7 @@ const Technologies = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

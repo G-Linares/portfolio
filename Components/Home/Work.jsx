@@ -132,7 +132,12 @@ const Work = () => {
       subtitle="All my personal projects from the last 3 years"
       className="!pb-14 md:!pb-28"
     >
-      <div className="flex items-center m-auto flex-col text-center w-full mb-10">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.7 }}
+        className="flex items-center m-auto flex-col text-center w-full mb-10"
+      >
         <ul className="flex flex-wrap justify-center text-sm font-medium text-center">
           {[{ name: "All", slug: "all" }, ...categories].map((ct, index) => (
             <li className="m-1 mb-1" key={index}>
@@ -149,7 +154,7 @@ const Work = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </motion.div>
 
       <Masonry
         breakpointCols={{ default: 4, 1100: 3, 700: 2, 500: 1 }}
