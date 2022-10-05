@@ -1,12 +1,9 @@
 import React from "react";
-
 import { motion } from "framer-motion";
-
 import Masonry from "react-masonry-css";
+
 import Section from "../Customs/Section";
 import WorkCard from "../Customs/WorkCard";
-//this image is temporary until I take screenshots of my projects
-import thumbnail from "../../Assets/thumbnail.png";
 
 const Work = () => {
   //this are the categories that will be stored under the category prop with the work object
@@ -39,7 +36,8 @@ const Work = () => {
   //this array is the data that will be displayed
   const works = [
     {
-      thumbnail: thumbnail,
+      thumbnail:
+        "https://lh4.googleusercontent.com/p2ZlYxuPA4ay_46iGzISaUJomzS8SL5NqIIo5HZgFW0Gk4W1LtkEy8XyQLZb4A-NQ5k=w2400",
       title: "Cripto Crane",
       description:
         "Find everything about the cripto coins around the world. Here I used an API to calculate prices, see trading costs, gas fees and estimate future prices, as well as general information about the coin",
@@ -49,7 +47,8 @@ const Work = () => {
       codeURL: "#code"
     },
     {
-      thumbnail: thumbnail,
+      thumbnail:
+        "https://lh4.googleusercontent.com/p2ZlYxuPA4ay_46iGzISaUJomzS8SL5NqIIo5HZgFW0Gk4W1LtkEy8XyQLZb4A-NQ5k=w2400",
       title: "Gym App",
       description:
         "Creacted a web app to take to the gym. Here you will fin all about exercises, muscle types and workouts overall. I created the client side to consume a 3 RapidAPI API's,",
@@ -59,7 +58,8 @@ const Work = () => {
       codeURL: "#code"
     },
     {
-      thumbnail: thumbnail,
+      thumbnail:
+        "https://lh4.googleusercontent.com/p2ZlYxuPA4ay_46iGzISaUJomzS8SL5NqIIo5HZgFW0Gk4W1LtkEy8XyQLZb4A-NQ5k=w2400",
       title: "Full Stack Ecommerce Site",
       description:
         "Created a restaurant e-commerce site where you can log-in, add items to the cart, pay and checkout. I made the full stack and used multiple technologies. I also created an admin dashboard panel to manage all items and stocks",
@@ -69,7 +69,8 @@ const Work = () => {
       codeURL: "#code"
     },
     {
-      thumbnail: thumbnail,
+      thumbnail:
+        "https://lh4.googleusercontent.com/p2ZlYxuPA4ay_46iGzISaUJomzS8SL5NqIIo5HZgFW0Gk4W1LtkEy8XyQLZb4A-NQ5k=w2400",
       title: "Payment procesing app",
       description:
         "This app will allow you to pay to an e-commerce with real debit or credit cards or cripto coins, this is only the server side, but client side will be built eventually.",
@@ -79,7 +80,8 @@ const Work = () => {
       codeURL: "https://github.com/G-Linares/backProject"
     },
     {
-      thumbnail: thumbnail,
+      thumbnail:
+        "https://lh4.googleusercontent.com/p2ZlYxuPA4ay_46iGzISaUJomzS8SL5NqIIo5HZgFW0Gk4W1LtkEy8XyQLZb4A-NQ5k=w2400",
       title: "Discord Node Bot",
       description:
         "This bot will process multiple commands from the client at the same time, it created for the sole reason to manage my personal discord server, for example wipe spam messages, create anounces, ban people, etc.",
