@@ -1,6 +1,9 @@
 import React from "react";
 import Section from "../Customs/Section";
+
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const initialState = { email: "", name: "", message: "" };
@@ -14,14 +17,29 @@ const Contact = () => {
 
   async function handleOnSubmit(e) {
     e.preventDefault();
-    const formData = {};
-    Array.from(e.currentTarget.elements).forEach((field) => {
-      if (!field.name) return;
-      formData[field.name] = field.value;
-    });
-    alert(
-      `name : ${formData.name} \nemail : ${formData.email} \nmessage : ${formData.message} `
-    );
+    emailjs
+      .sendForm(
+        "service_kavco2d",
+        "template_fsh11fk",
+        e.target,
+        "user_pv0UV2ShgsQqCWq9uSzwW"
+      )
+      .then(
+        (result) => {
+          Swal.fire({
+            icon: "success",
+            title: result.text,
+            text: "I'll reply to you in shortly!"
+          });
+        },
+        (error) => {
+          Swal.fire({
+            icon: "Error",
+            title: error.text,
+            text: "Something went wrong, please contact me through any social media app."
+          });
+        }
+      );
   }
 
   return (

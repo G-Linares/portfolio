@@ -1,15 +1,40 @@
-import React from "react";
-import Section from "../Customs/Section";
-// import update from "../../Assets/update.jpg";
-import montana from "../../Assets/montana.jpg";
+import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-
 import Image from "next/image";
-import { HiDownload, HiEye } from "react-icons/hi";
 import Link from "next/link";
-import Typewriter from "typewriter-effect";
+import Typed from "typed.js";
+import { HiDownload, HiEye } from "react-icons/hi";
+
+import Section from "../Customs/Section";
 
 const Hero = () => {
+  const typingElement = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(typingElement.current, {
+      // Strings to display
+      strings: [
+        "Front-End Developer",
+        "Back-End Developer",
+        "Full-Stack Developer"
+      ],
+      // Speed settings, try diffrent values untill you get good results
+      startDelay: 1000,
+      typeSpeed: 80,
+      backSpeed: 50,
+      backDelay: 1000,
+      smartBackspace: true,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|"
+    });
+
+    // Destroying
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   //I found the Section custom component online, this was to wrap the whole componenet and only add the content to it, it can be reused
   return (
     <Section
@@ -26,22 +51,9 @@ const Hero = () => {
           <h1 className="title-font sm:text-4xl text-2xl mb-2 font-bold ">
             Hi 👋, my name is Gerardo
           </h1>
+
           <h3 className="text-xl mt-1 opacity-90 font-normal">
-            <p>
-              {/* this typewriter is a third party library that will type and untype texts */}
-              {/* <Typewriter
-                options={{
-                  strings: [
-                    "I'm a Front-End Developer",
-                    "I'm a Back-End Developer",
-                    "I'm a Full-Stack Developer"
-                  ],
-                  autoStart: true,
-                  loop: true
-                }}
-              /> */}
-              I am a Full-Stack Developer
-            </p>
+            I&apos;m a <span ref={typingElement}></span>
           </h3>
           <div className="w-24 h-1 bg-primary bg-opacity-70 mt-6 mb-4">
             <div className="w-10 h-1 bg-primary"></div>
@@ -92,7 +104,7 @@ const Hero = () => {
             alt="not found"
             width={550}
             height={400}
-            src={montana}
+            src="https://lh3.googleusercontent.com/kob2NyVVwpNFnvxPuC7De_INuVoHzC-nJjlt3v-IyGL__-4vM_AhSu0wLcfFPvJfkrI=w2400"
           />
         </motion.div>
       </div>

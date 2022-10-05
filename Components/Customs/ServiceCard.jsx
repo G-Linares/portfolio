@@ -9,7 +9,12 @@ const ServiceCard = (props) => {
         <div className="p-6 flex justify-center flex-col">
           <div className="mb-4 flex justify-center items-center">
             <div className="w-[60px] h-[60px] flex justify-center transition duration-300 items-center bg-white text-white rounded-full group-hover:text-primary group-hover:bg-white">
-              <Image src={icon} alt="not found" />
+              <Image
+                src={icon}
+                alt="not found"
+                width={"60px"}
+                height={"60px"}
+              />
             </div>
           </div>
           <h3 className="text-lg capitalize transition duration-300 mb-3 font-bold group-hover:text-white">

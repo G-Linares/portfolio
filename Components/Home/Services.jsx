@@ -4,33 +4,27 @@ import { motion } from "framer-motion";
 import Section from "../Customs/Section";
 import ServiceCard from "../Customs/ServiceCard";
 
-//images that will be passes down to card compoenent
-import dish from "../../Assets/dish.png";
-import keywords from "../../Assets/keywords.png";
-import cura from "../../Assets/curaDeuda.png";
-import citi from "../../Assets/citi.png";
-
 const Services = () => {
   const data = [
     {
       title: "Dish",
       description: "QA Engineer",
-      icon: dish
+      icon: "https://lh6.googleusercontent.com/5MuzM8U4nsSLsM6-ALU-WlU0vjOXojxTxwlQlMhBchW3M6K0qOuq_YiRa2hqZ8qyDIM=w2400"
     },
     {
       title: "Keywords Studios",
       description: "Player Support Agent",
-      icon: keywords
+      icon: "https://lh6.googleusercontent.com/FEHr0C-EAYnuLf63fCxxIBAkfdeDPK1h1HO47HCMKfdQrG2By6ayvZ7Lc_echjQ9znA=w2400"
     },
     {
       title: "Cura Deuda",
       description: "Full Stack Developer",
-      icon: cura
+      icon: "https://lh5.googleusercontent.com/7oZKwxWWK62v8zcgRnpybptmk0jaaEIcUp7Ne4izA90ZOl3gSmkXKu3FSrCeGVlGiJg=w2400"
     },
     {
       title: "Citi (Altimetrik)",
       description: "Full Stack Developer",
-      icon: citi
+      icon: "https://lh5.googleusercontent.com/I0A2k4jWl2R-7edIqsZku_Erbu4Uko7ztCNuUhGH_5wpz0SUGS-8cslYz47DtWozeAQ=w2400"
     }
   ];
 
