@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 const ServiceCard = (props) => {
-  const { icon, title, description } = props;
+  const { icon, title, description, years } = props;
 
   return (
     <div className=" w-full sm:w-1/2 lg:w-1/4">
@@ -22,6 +22,9 @@ const ServiceCard = (props) => {
           </h3>
           <p className="text-xs capitalize opacity-80 transition duration-300 text-textSecondary dark:text-textDarkSecondary group-hover:text-white">
             {description}
+          </p>
+          <p className="text-xs capitalize opacity-80 transition duration-300 text-textSecondary dark:text-textDarkSecondary group-hover:text-white pt-2">
+            {years}
           </p>
         </div>
         <div className="z-10 opacity-0 group-hover:opacity-100">

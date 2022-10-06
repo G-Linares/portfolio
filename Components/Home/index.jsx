@@ -10,6 +10,7 @@ import Work from "./Work";
 
 const Home = () => {
   const HomeStyling = {
+    backgroundImage: "url(./images/background.jpg)",
     backgroundAttachment: "fixed",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -17,7 +18,6 @@ const Home = () => {
   };
   return (
     <div
-      className='bg-[url("/images/background.jpg")]'
       style={{
         ...HomeStyling
       }}
